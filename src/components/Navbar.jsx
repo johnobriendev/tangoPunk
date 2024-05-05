@@ -7,7 +7,7 @@ export default function Navbar(){
    const [menuOpen, setMenuOpen] = useState(false);
    
     return(
-        <nav className="flex flex-col items-start gap-5  py-5 px-2 sticky bg-yellow-500 text-red-500 w-full top-0  z-10 md:flex-row md:justify-between md:items-center md:px-10 md:bg-transparent md:text-white md:z-10 md:absolute">
+        <nav className="flex flex-col items-start gap-5  py-2 px-2 sticky bg-yellow-500 text-red-500 w-full top-0  z-10 md:flex-row md:justify-between md:items-center md:px-10 md:bg-transparent md:text-white md:z-10 md:absolute">
             <Link to='/' className="text-3xl md:hover:scale-110 duration-150 px-3 py-1 rounded md:text-5xl" onClick={() => setMenuOpen(false)}>tangopunk</Link>
             
                 <div className="text-2xl md:hidden cursor-pointer absolute top-5 right-5" onClick={() => setMenuOpen(!menuOpen)}>
